@@ -1,0 +1,192 @@
+:root{
+    --colore1: #3C887E;
+    --colore2: #5B7B7A;
+    --colore3: #6FEDB7;
+    --colore4: #ACD8AA;
+    --colore5: #6C9A8B;
+    --colore6: #71C6FE;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+#riferimenti{
+    /* display: flex;
+    justify-content: space-between; */
+    background-color: var(--colore5);
+    padding: .5rem .2rem;
+    overflow: auto;
+}
+
+#riferimenti a{
+    color: white;
+    font-weight: 300;   
+}
+
+/* Es posible usar este modo para poner uno a izquierda y derecha, o usar el flex con il space-between */
+#riferimenti a:nth-child(1){
+    float: left;
+}
+
+#riferimenti a:nth-child(2){
+    float: right;
+}
+
+.container {
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 1rem auto;
+}
+
+/* menu princapale  */
+#menu-principale{
+    text-align: center;
+    background-color: var(--colore1);
+    padding: .5rem 0;
+}
+
+#menu-principale li {
+    display: inline;
+}
+
+#menu-principale li a {
+    color: white ;
+    margin: 0.5rem;
+}
+
+#navigazione-principale{
+    position: sticky;
+    top: 0;
+}
+
+/* primo piano */
+article h2{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px gray;
+}
+
+article{
+    text-align: center;
+}
+
+article p{
+    margin: 1.5rem 0 2.5rem;
+}
+
+a.button{
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+a.button:hover{
+    background-color: var(--colore2);
+    color:white;
+}
+
+section#primo-piano div{
+    margin-bottom: 3rem;
+}
+
+section#primo-piano {
+    display: flex;
+    flex-direction: column;
+}
+
+section#primo-piano a{
+    display: block;
+}
+
+#logo{
+    margin: 0 auto;
+    display: block;
+}
+
+/* motto payoff */
+
+#motto{
+    background-image: url(./developer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+}
+
+#motto h2{
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.pellicola{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* prove
+
+#prove{
+    height: 300px;
+    border: 1px solid purple;
+    position: relative;
+}
+
+#prove div{
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#primo{
+    background-color: var(--colore2);
+}
+
+#secondo{
+    background-color: rgba(255, 0, 0, 0.164);
+    (position relative: el elemento si sposta en relacion a su posicion original)
+    position: relative; 
+    top: 20px;
+    right: -20px;
+    z-index: 13;
+}
+
+#terzo{
+    background-color: green;
+    (position absolute: si sposta en relacion a la posicion del padre, siempre que el padre no sea estatic!!!)
+    position: absolute;
+    top: 20px;
+    el numero + grande del z-index queda adelante
+    z-index: 12
+    ;
+} */
+
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 80%;
+    }
+
+    section#primo-piano {
+        flex-direction: row;
+    }
+    section#primo-piano > div {
+        /* display: inline-block; */
+        /* width: 29%; */
+        padding: 0 12px;
+        margin: 0;
+    }
+}

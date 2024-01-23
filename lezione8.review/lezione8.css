@@ -1,0 +1,73 @@
+:root{
+    --colore1: #33658A;
+    --colore2: #86BBD8;
+    --colore3: #2F4858;
+    --colore4: #F6AE2D;
+    --colore5: #F26419;
+    --colore7: #7A9E9F;
+    --colore8: #4F6367;
+    --colore9: #EEF5DB;
+    --colore10: #FE5F55;
+}
+section {
+    background-color: #F26419;
+    color: white;
+}
+
+/* #elenco{
+    background-color: #F6AE2D;
+}
+.bg-red{
+    background-color: red;
+}
+ul{
+    background-color: #86BBD8; !important
+} */
+
+ul > li span, section address{
+    color: var(--colore5); 
+ }
+
+ div{
+    background-color: aqua;
+}
+
+li + li{
+    background-color: #33658A;
+}
+p + div{
+    background-color: #F26419;
+}
+form[method="POST"]{
+    border: 2px dashed #33658A;
+}
+a:link{
+    color: var(--colore8);
+}
+a:hover{
+    color: var(--colore10);
+}
+a:active{
+    color: var(--colore3);
+}
+
+@media screen and (min-width:576px){
+    section{
+        background-color: #33658A;
+    }
+}
+@media screen and (min-width:768px){
+    section{
+        background-color: #86BBD8;
+    }
+}
+@media screen and (min-width:992px){
+    section{
+        background-color: #2F4858;
+    }
+}
+@media screen and (min-width:1200px){
+    section{
+        background-color: #F6AE2D;
+    }
+}

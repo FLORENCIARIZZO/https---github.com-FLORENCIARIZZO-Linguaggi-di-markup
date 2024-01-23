@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="/ripaso/ripaso.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <form action="http://localhost/corso/salva-dati.php" method="POST"  enctype="multipart/form-data" class="2colonne">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name"> 
+            <!-- ID E NAME (DI LABEL) VENGONO COLLEGATI. NAME=NAME E COME SI SALVA SU PHP -->
+        </div>  
+        <div>
+            <label for="surname">Cognome:</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>  
+        <div>
+            <button type="submit">Salva</button>
+        </div> 
+        <div>
+            <label for="hobby">Qual'è il tuo hobby preferito?</label>
+
+            <label for="sport">Sport</label> 
+            <input type="radio" name="hobby" id="sport" value="1">
+            <label for="lettura">Lettura</label> 
+            <input type="radio" name="hobby" id="lettura" value="2">
+            <label for="cinema">Cinema</label> |
+            <input type="radio" name="hobby" id="cinema" value="3">
+            <!-- per avere una scelta unica il valore sul "name" debe ser iguale en todas las opciones-->
+            <!-- la value es como viene escrita en php -->
+        </div> 
+        
+        
+        <div>
+            <h2>Qual'è il tipo di film che preferisci?</h2>
+            <input type="checkbox" name="fantascienza" id="fantascienza">
+            <label for="fantascienza">Fantascienza</label>
+            <input type="checkbox" name="drammatico" id="drammatico">
+            <label for="drammatico">Drammatico</label>
+            <input type="checkbox" name="romantico" id="romantico">
+            <label for="romantico">Romantico</label>
+            <!-- in checkbox el name coincide con el id -->
+        </div>    
+    </form>
+
+    <audio src= "../"></audio>
+
+
+
+</body>
+</html>
