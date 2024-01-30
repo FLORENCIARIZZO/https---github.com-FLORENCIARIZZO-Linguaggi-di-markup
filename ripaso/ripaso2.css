@@ -1,0 +1,55 @@
+/* smarphone+generale */
+#logo{
+    text-align: center;
+}
+
+article{
+    border: 1px solid black;
+    padding: 5px;
+    /* padding:spazio tra il borde y el texto  */
+}
+
+#primopiano {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 576px) {
+    /*tablet*/
+    #primopiano{
+        flex-direction: row;
+        justify-content: space-evenly ;
+        flex-wrap: wrap;
+    }
+    #primopiano article{
+        width: 48%;
+        margin-left: 5px;
+    }
+        
+
+}
+
+@media screen and (min-width: 992px) {
+    /*desktop*/
+    #primopiano{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    
+}
+
+/* DISPLAY FLEX
+
+- COLUMNS: Los elementos vienen dispeuestos verticalmente. En este caso:
+El align-text comandaria horizontalmente
+El justify content comandaria verticalemte
+
+-ROW: Los elementos vienen dispuestos horizontalmente. En este caso:
+El align-text comandaria verticalmente
+El justify content comandaria horizontalmente*/
+
+/* El justify contect mas utilizado en row (dado que en column, es decir vertical, tendria menos sentido) indica como vienen dispuestos los elementos horizontalmente, con un espacio entre ellos o no por ejemplo */
+/* El elemento wrap permite disponer si los elementos, al llenar el espacio disponible, andarian o no a capo (WRAP=A CAPO; NO WRAP=NON A CAPO), obviamente mas utilizado en ROW. 
