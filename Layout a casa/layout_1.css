@@ -1,0 +1,47 @@
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color:#9E4770;
+}
+
+#menu{
+    background-color: #9E4770;
+    padding: 8px;
+}
+
+#fondo{
+    background-image: url(./technology-792180_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.columna{
+    columns: 2;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* esta define dos columnas */
+    grid-template-rows: repeat (4, minmax(0, .5fr));
+    /* esta define la medida de las 4 filas 
+    y la meida de cada unaa */
+
+    grid-gap: 10px;
+    /* define el espacio entre las imagenes */
+}
+#gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* @media screen and (max-width:471px) {
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+} */
+

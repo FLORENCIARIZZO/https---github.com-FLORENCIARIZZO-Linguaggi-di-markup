@@ -1,0 +1,116 @@
+
+#logo,#nav{
+    background-color: #F2F2F2;
+}
+
+#nav{
+    font-family: 'Roboto', sans-serif;
+}      
+
+#menu{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#button{
+    border: 1px solid white;
+    border-radius: 0%;
+}
+
+#opzioni{
+    border: 1px solid black;
+    padding: 5ex;
+}
+
+#caratteristiche{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+}
+
+#imagine{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    height: 300px;
+    width: 300px;
+}
+
+#button_2{
+    border-radius: 0%;
+    width: 200px;
+    margin-left: 20em;
+}
+
+#form{
+    background-image: url(../verifica/immagini/parallasse.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+}
+
+#form div form{
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.pellicola{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.70) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#contatti{
+    color: white;
+    border: 1px solid white;
+    border-radius: 2%;
+    width: 700px;
+    height: 50px;
+}
+
+#cuadrato{
+    background-color: orange;
+    padding: 50px;
+    border: 2px solid black;
+}
+
+#button_3{
+    border-radius: 0%;
+    width: 500px;
+}
+
+#footer{
+    padding: 100px;
+}
+
+@media screen and (max-width:992px) {
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form{
+        display: flex;
+        padding: 100px;
+        margin: 2px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
